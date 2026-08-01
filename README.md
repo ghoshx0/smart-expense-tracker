@@ -60,7 +60,7 @@ smart-expense-tracker/
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ghoshx0/smart-expense-tracker
 ```
 
 Move into the project directory:
