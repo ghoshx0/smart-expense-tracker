@@ -22,7 +22,6 @@ AI was primarily used for:
   - Route configuration
   - Validation using express-validator
   - Jest and Supertest test cases
-- Generating documentation (`README.md` and `AI_NOTES.md`).
 
 ### Written and Implemented by Me
 
@@ -32,7 +31,7 @@ I was responsible for:
 - Setting up the Node.js environment.
 - Installing and configuring all dependencies.
 - Creating every folder and file.
-- Implementing the generated code into the project.
+- Implementing the code into the project.
 - Debugging runtime issues.
 - Configuring Jest for ES Modules.
 - Running the application.
