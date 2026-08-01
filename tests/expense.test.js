@@ -176,3 +176,43 @@ test("should return 400 for invalid expense data", async () => {
 
   expect(response.body.errors.length).toBeGreaterThan(0);
 });
+
+//TEST 8
+
+test("should search expenses by title", async () => {
+  await request(app)
+    .post("/expenses")
+    .send({
+      title: "Lunch",
+      amount: 250,
+      category: "Food",
+      date: "2026-08-01",
+    });
+
+  await request(app)
+    .post("/expenses")
+    .send({
+      title: "Movie",
+      amount: 400,
+      category: "Entertainment",
+      date: "2026-08-01",
+    });
+
+  await request(app)
+    .post("/expenses")
+    .send({
+      title: "Lunch at Office",
+      amount: 180,
+      category: "Food",
+      date: "2026-08-02",
+    });
+
+  const response = await request(app)
+    .get("/expenses/search?query=lunch");
+
+  expect(response.statusCode).toBe(200);
+
+  expect(response.body.success).toBe(true);
+
+  expect(response.body.data).toHaveLength(2);
+});

@@ -42,6 +42,14 @@ class ExpenseService {
 
     return expenseDeleted;
   }
+
+	async searchExpenses(query) {
+		const expenses = await expenseRepository.getAllExpenses();
+
+		return expenses.filter((expense) =>
+			expense.title.toLowerCase().includes(query.toLowerCase())
+		);
+	}
 }
 
 export default new ExpenseService();

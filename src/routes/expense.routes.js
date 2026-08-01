@@ -22,6 +22,11 @@ router.get(
   expenseController.getTotalExpenses
 );
 
+router.get(
+  "/search",
+  expenseController.searchExpenses
+);
+
 router.delete(
   "/:id",
   expenseController.deleteExpense

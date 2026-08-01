@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "db31dee7-e81c-47ad-91a3-5784ad713a75",
+    "title": "Lunch",
+    "amount": 250,
+    "category": "Food",
+    "date": "2026-08-01"
+  },
+  {
+    "id": "236f32be-21de-4d13-97df-2f804d1dbb39",
+    "title": "Movie",
+    "amount": 400,
+    "category": "Entertainment",
+    "date": "2026-08-01"
+  },
+  {
+    "id": "d2aa36d9-60f5-428b-a932-b9071fc58d3c",
+    "title": "Lunch at Office",
+    "amount": 180,
+    "category": "Food",
+    "date": "2026-08-02"
+  }
+]

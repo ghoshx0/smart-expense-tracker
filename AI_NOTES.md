@@ -58,6 +58,8 @@ The following checks were performed:
 - Tested validation for invalid request bodies.
 - Verified that data was correctly persisted in `expenses.json`.
 - Executed the Jest test suite and confirmed all tests passed.
+- Implemented the optional bonus feature to search expenses by title.
+- Added automated tests to verify the search endpoint.
 
 ### Changes Made
 

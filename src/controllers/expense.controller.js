@@ -65,6 +65,21 @@ class ExpenseController {
       next(error);
     }
   }
+
+	async searchExpenses(req, res, next) {
+		try {
+			const { query } = req.query;
+
+			const expenses = await expenseService.searchExpenses(query);
+
+			return res.status(200).json({
+				success: true,
+				data: expenses,
+			});
+		} catch (error) {
+			next(error);
+		}
+	}
 }
 
 export default new ExpenseController();

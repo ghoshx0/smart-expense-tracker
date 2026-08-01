@@ -7,6 +7,7 @@ The API allows users to:
 - Add a new expense
 - View all expenses
 - Filter expenses by category
+- Search expenses by title (Bonus)
 - Calculate total expenses
 - Delete an expense
 
@@ -166,6 +167,28 @@ DELETE /expenses/:id
 ```
 
 ---
+
+### Search Expenses (Bonus)
+
+```
+GET /expenses/search?query=lunch
+```
+
+Returns all expenses whose title contains the search text (case-insensitive).
+
+Example:
+
+```json
+[
+  {
+    "id": "...",
+    "title": "Lunch at Office",
+    "amount": 180,
+    "category": "Food",
+    "date": "2026-08-02"
+  }
+]
+```
 
 ## Validation Rules
 
