@@ -1,0 +1,25 @@
+{
+  "name": "smart-expense-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.x.x",
+    "express-validator": "^7.x.x",
+    "uuid": "^13.x.x"
+  },
+  "devDependencies": {
+    "jest": "^30.x.x",
+    "nodemon": "^3.x.x",
+    "supertest": "^7.x.x"
+  }
+}
